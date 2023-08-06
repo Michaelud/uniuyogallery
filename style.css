@@ -1,0 +1,246 @@
+@font-face {
+  font-family: 'poppins-regular';
+  src: url('regular-font/poppins-light-webfont.woff2') format('woff2'),
+  url('regular-font/poppins-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+ font-family: 'poppins-regular', serif;
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ text-decoration: none;
+ box-sizing: border-box;
+}
+
+.front{
+   background-color: white;
+}
+body{
+     background-color: rgb(128,178,118,.05);
+}
+
+.nav{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2E7D32;
+  opacity: .8;
+  height: 100vh;
+  width: 0;
+  z-index: 2;
+}
+.nav ul{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 70vh;
+}
+.nav ul li{
+   margin-top: 13px;
+   padding: 10px;
+   width: 100%;
+   text-align: center;
+}
+.nav ul li a{
+  color: white;
+  font-size: 40px;
+}
+.close{
+  margin-top: 20vw;
+  margin-left: 78vw;
+  color: white;
+  font-size: 80px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.nav ul li a:hover{
+   color: rgb(128,178,118);
+}
+.toggle{
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 50px;
+}
+
+.logo a{
+    color: white;
+    font-size: 40px;
+}
+
+.front{
+   max-width: 100%;
+   height: 100vh;
+}
+
+.navBar{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  background-color: #2E7D32;
+}
+
+/** nav bar style ends here */
+
+/* front page text Begin */
+.frontPage{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100vh;
+   flex-direction: column;
+   text-align: center;
+}
+
+.frontPage .textBox h1{
+   font-size: 100px;
+   color: #2E7D32;
+}
+
+.frontPage .textBox p{
+   font-style: italic;
+   margin-top: 2vw;
+   font-size: 30px;
+   margin-bottom: 2vw;
+}
+
+button{
+   padding: 2vw 5vw;
+   margin-top: 2vw;
+   border: 3px solid green;
+   border-radius: 2px;
+   text-align: center;
+   background: transparent;
+   outline: none;
+   cursor: pointer;
+}
+
+button a{
+   color: black;
+}
+
+
+/** history Begins here **/
+
+.history {
+   height: 120vh;
+   width: 80%;
+   margin: auto;
+}
+
+.history h2, .gallery h2 {
+  margin-top: 8vw;
+   text-align: center;
+   font-size: 60px;
+   margin-bottom: 5vw;
+   font-weight: 400;
+    color: #2E7D32;
+}
+.history p{
+   font-size: 30px;
+}
+
+img{
+   width: 100%;
+   height: auto;
+}
+
+/* gallery part */
+
+.gallery{
+  width: 100%;
+  margin: auto;
+  height: 200vh;
+}
+
+.gallery .row{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.row .img{
+   flex-basis: 45%;
+   margin: 1vw;
+   align-items: center;
+   border: 1px solid #2E7D32;
+}
+
+/* footer style */
+.footer{
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2E7D32;
+    
+}
+
+.footer a{
+    color: white;
+    font-size: 40px;
+    margin-top: 1vw;
+}
+
+
+
+
+
+/* responsive part */
+@media screen and (max-width:670px){
+  .toggle, .logo a, .nav ul li a {
+     font-size: 20px;
+  }
+.close{
+  font-size: 30px;
+}
+.frontPage .textBox h1{
+  font-size: 40px;
+}
+.frontPage .textBox p{
+  font-size: 10px;
+}
+button{
+   border: 1px solid green;
+}
+button a{
+   color: black;
+}
+
+.history{
+   height: 225vh;
+}
+.history h2, .gallery h2{
+  font-size: 30px;
+}
+.history p{
+   font-size: 15px;
+}
+
+.footer a{
+   font-size: 15px;
+}
+
+
+
+}
+@media screen and (min-width: 480px) {
+  
+   
+.history {
+   height: 240vh;
+   width: 80%;
+  
+}
+
+ }
